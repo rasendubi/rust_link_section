@@ -1,0 +1,13 @@
+[package]
+name = "link_section"
+version = "0.1.0"
+authors = ["Alexey Shmalko <rasen.dubi@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies.nested]
+path = "./nested"
+
+[profile.release]
+lto = true
